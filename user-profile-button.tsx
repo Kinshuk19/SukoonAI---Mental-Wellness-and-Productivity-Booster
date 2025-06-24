@@ -10,7 +10,7 @@ import {
   DropdownMenuSeparator,
 } from "./ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { User, Settings, LogOut, Sparkles, LineChart } from "lucide-react";
+import { User, Settings, LogOut, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export function UserProfileButton() {
@@ -47,12 +47,6 @@ export function UserProfileButton() {
           <Link href="/profile" className="flex items-center">
             <User className="mr-2 h-4 w-4" />
             <span>Profile</span>
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="/profile/analytics" className="flex items-center">
-            <LineChart className="mr-2 h-4 w-4" />
-            <span>Analytics</span>
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem asChild>
